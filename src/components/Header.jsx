@@ -13,8 +13,8 @@ const Header = () => {
         <h1 className='text-8xl font-bold'><em>Zomato</em></h1>
         <p className='text-4xl'>Discover the best food & drinks in <span className='font-bold'>Agra</span></p>
         <section className='flex justify-center '>
-        <section className='bg-white text-gray-500 h-12 rounded-md w-[50%] flex justify-evenly divide-x-2 items-center'>
-          <section className='flex items-center w-[25%] justify-between m-0'>
+        <section className='md:bg-white text-gray-500 md:h-12 rounded-md md:w-[50%] flex justify-evenly  md:flex-row flex-col md:divide-x-2 items-center w-full gap-y-3'>
+          <section className='flex items-center w-[25%] justify-between m-0 bg-white'>
             <section className='flex items-center gap-1 w-full'>
               <FaLocationDot className='text-red-500 text-xl'/>
               <p>Agra</p>
@@ -22,15 +22,13 @@ const Header = () => {
             <section>
               <MdOutlineArrowDropDown className='text-3xl w-full'/>
             </section>
-            
           </section>
-          <section className='flex items-center bg-transparent w-[55%] gap-1'>
+          <section className='flex items-center bg-transparent w-[55%] gap-1 bg-white'>
             <CiSearch className='text-3xl'/>
             <input type='search' placeholder='Search for restaurant, cuisine or a dish' className='bg-transparent w-full' />
           </section>
         </section>
         </section>
-
       </main>
     </header>
   )
